@@ -3,9 +3,12 @@ This repo is a collection of different featurization technique implementation fo
 
 We will be developing following features:
 
-Feature	Abbreviation					Reference		Developer
-ACF	Auto Corelation Function			1Suc-Pred #2		Arman
-EBGW	Encoding based on grouped weight 		1Suc-Pred #3		Joyanta
+
+| Feature 	| Abbreviation             	| Reference    	| Developer 	|
+|---------	|--------------------------	|--------------	|-----------	|
+
+|ACF	|Auto Corelation Function			|1Suc-Pred #2		|Arman
+|EBGW	|Encoding based on grouped weight 		|1Suc-Pred #3		|Joyanta
 VDWV	Normalised Van Der Walls Volumn			1Suc-Pred #3		Arman
 WAAC	Position Weight Amino Acid Composition		1Suc-Pred #3		Joyanta
 AAC	Amino Acid Composition				2SuccFind #2		Arman
