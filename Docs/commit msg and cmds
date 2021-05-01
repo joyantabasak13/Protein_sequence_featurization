@@ -6,11 +6,11 @@ git push origin HEAD:master
 
 ################ Commit MSG Template ###############
 git commit -sm"
-[Title] Removed Test file
+[Title] Add papers and cmd list file 
 
 [FeatureName] n/a
-[Modification] Removed Test file
-[Comment] Clean up
+[Modification] n/a
+[Comment] Will be removed later
 [Researcher] Joyanta
 "
 
