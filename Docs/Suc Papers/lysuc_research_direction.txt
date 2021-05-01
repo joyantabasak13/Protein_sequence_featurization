@@ -1,0 +1,21 @@
+Current Scenario:
+1. Since 2018, A larger (10x) dataset for lysine succ. was published. (older->CPLM, newest->PLMD)
+2. Several paper (4-5) worked on PLMD dataset.
+3. None of their claimed online repository works nor their code is open source. So even if we get good result, 
+	we cannot compare unless we reproduce those works ourselves. 
+	We can compare against their reported result but that might be dishonestly fabricated/manipulated.
+4. The features we used are already partially used in some of the recently published paper on lysine succ.
+
+Possible short term future direction:
+1. Reproduce the best reported CPLM and PLMD tools with PLMD dataset. 
+2. It may be possible to publish a Survey paper by in-depth comparing these tools.
+3. I had run our pipeline on PLMD data and the results ae more or less similar to their reported results.
+	After reproducing them, if our result stands better we might go for publishing. 
+4. If our results are not better, we can check search/think/discover/experiment new features. 
+	Even if results are comparable (if not better), I think we can go for publishing as we introduced new features in lysine. succ research.
+
+Possible sightly longer term direction:
+1. Utilize our developed pipeline for other PTMs (methylation, acetylation,...etc.)
+
+Possible long term direction:
+1. Develop an easy to use framework for PTM analysis in general.

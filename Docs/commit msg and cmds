@@ -1,0 +1,23 @@
+################ Commit CMD ########################
+git pull
+git add .
+git commit -sm "...follow following template for major commits..."
+git push origin HEAD:master
+
+################ Commit MSG Template ###############
+git commit -sm"
+[Title] Removed Test file
+
+[FeatureName] n/a
+[Modification] Removed Test file
+[Comment] Clean up
+[Researcher] Joyanta
+"
+
+############## Activating Python Environment (Joyanta's Machine) ########### 
+source pythonEnvironments/proteinFeaturizationProjectENV/bin/activate
+
+############### Writing package requirements & Loading them in new Machine ############
+env1/bin/python -m pip freeze > requirements.txt
+env2/bin/python -m pip install -r requirements.txt
+

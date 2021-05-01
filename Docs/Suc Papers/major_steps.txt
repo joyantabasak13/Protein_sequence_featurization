@@ -1,0 +1,30 @@
+Papers: https://drive.google.com/drive/folders/1PiDGpt34fLcu-ny50WclM2KryATLp3z2?usp=sharing
+MUST READ: 2019_Survey_Paper.pdf in drive
+
+Dataset: PLMD Dataset (http://plmd.biocuckoo.org/index.php)
+	6377 unique proteins from 12 species contains 88735 lysine instances
+
+Major Step 1: Homology Reduction
+		CD-Hit is widely used for this. No other alternative noted in previous works.
+		CD-Hit (http://weizhongli-lab.org/cd-hit/) Has online server support in addition to offline tool version
+
+Major Step 2: Dataset Balancing
+		Possible Prerequisite: windowsized protein sub-strings, feature matrix. 
+		Dataset almost 10:1 negative to positive imbalanced.
+		Previously we used KNN Cleaning Treatment. KNN, random balancing, sub-strings homology reduction noted in prev. work.
+	A possible pitfall: Are the lysines marked as non-suc completely non-suc or they are potential suc. 
+		but appeared non-suc at the time of experimental data collection. 
+
+Major Step 3: Featurization
+		Create feature matrix from data
+		12 types of features used in literature so far:
+	MUST READ: 2019_Survey_Paper in drive. ATLEAST page 4,6,8 <-MUST
+
+Major Step 4: Feature Selection
+		In case of large number of features, of which many are not significantly discriminatory, need to reduce feature set.
+		Previously used RF importance score (somewhat works), RF/SVM-Recursive feature elimination (Does not work)
+	A Good repo: https://jundongl.github.io/scikit-feature/algorithms.html
+
+Major Step 5: Classifier
+		RF, SVM, Ensemble, XGBoost, NN are used in prev.work with various hyperparameters and variations.
+	A Common trend: For same feature matrix all types of classifiers showed little variation in performance. 
