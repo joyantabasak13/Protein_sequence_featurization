@@ -1,4 +1,4 @@
-# Protein_sequence_featurization
+# Protein Sequence Featurization
 This repo is a collection of different featurization technique implementation for Protein sequences. 
 
 We will be developing following features:
