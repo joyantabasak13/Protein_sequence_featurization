@@ -15,7 +15,7 @@ git commit -sm"
 "
 
 ############## Activating Python Environment (Joyanta's Machine) ########### 
-source pythonEnvironments/proteinFeaturizationProjectENV/bin/activate
+source pythonEnvironments/proteinRes/bin/activate
 
 ############### Writing package requirements & Loading them in new Machine ############
 env1/bin/python -m pip freeze > requirements.txt
