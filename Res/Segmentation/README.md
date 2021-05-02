@@ -17,6 +17,7 @@ Output: <br>
 	Sequence: Windowsized sequence segments with lysine ("k") in the midddle. Allows mirroring. <br>
 	ACC_ID: PLMD.ID  <br>
 <br>
+
 | Id  	| Class    	| Sequence    	| ACC_ID 	|
 |-------|--------------	|--------------	|-----------	|
 
