@@ -5,12 +5,12 @@ git commit -sm "...follow following template for major commits..."
 git push origin HEAD:master
 
 ################ Commit MSG Template ###############
-git commit -sm"
-[Title] Add papers and cmd list file 
+git commit -sm "
+[Title] EBGW: character sequencing done 
 
 [FeatureName] n/a
 [Modification] n/a
-[Comment] Will be removed later
+[Comment] Normalised weight calculation from progressively increasing subsequence remains to-do
 [Researcher] Joyanta
 "
 
