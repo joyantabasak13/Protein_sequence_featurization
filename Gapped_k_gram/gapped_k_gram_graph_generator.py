@@ -22,7 +22,7 @@ kmer_len = 3
 
 graph_list = []
 for seq in df['Sequence']:
-    seq_graph = nx.MultiGraph()
+    seq_graph = nx.MultiDiGraph()
     print(seq)
     for i in range(sequence_length - kmer_len):
         kmer_seq_i = seq[i: i + kmer_len]
@@ -34,6 +34,7 @@ for seq in df['Sequence']:
                 seq_graph.add_node(kmer_seq_i)
             edge_weight = 1 / abs(j - i)
             seq_graph.add_edge(kmer_seq_i, kmer_seq_j, weight=edge_weight)
+            seq_graph.add_edge(kmer_seq_j, kmer_seq_i, weight=edge_weight)
     print(seq_graph)
     graph_list.append(seq_graph)
     # pos = nx.spring_layout(seq_graph)
@@ -49,15 +50,15 @@ store_as_list_of_dicts(graph_file_name, graph_list)
 print("Saving Done")
 
 
-def load_list_of_dicts(filename, create_using=nx.MultiGraph):
-
-    with open(filename, 'rb') as f:
-        list_of_dicts = pickle.load(f)
-
-    graphs = [create_using(graph) for graph in list_of_dicts]
-
-    return graphs
-
-graphs = load_list_of_dicts(graph_file_name)
-for graph in graphs:
-    print(graph)
+# def load_list_of_dicts(filename, create_using=nx.MultiDiGraph):
+#
+#     with open(filename, 'rb') as f:
+#         list_of_dicts = pickle.load(f)
+#
+#     graphs = [create_using(graph) for graph in list_of_dicts]
+#
+#     return graphs
+#
+# graphs = load_list_of_dicts(graph_file_name)
+# for graph in graphs:
+#     print(graph)
